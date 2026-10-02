@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A sample developer portfolio featuring selected projects, skills, and a little about the person behind the work.">
+  <meta name="color-scheme" content="dark light">
+  <title>Alex Morgan — Frontend Developer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23c8f27a'/%3E%3Ctext x='7' y='28' font-family='Arial' font-weight='bold' font-size='25' fill='%23171917'%3Ea.%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="logo" href="#home" aria-label="Alex Morgan home">alex<span>.</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden>Menu</button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a class="nav-contact" href="#contact">Let’s talk</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Switch to light theme" title="Switch color theme" hidden><span aria-hidden="true">◐</span></button>
+  </header>
+  <main id="main">
+    <section id="home" class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="line"></span> ALEX MORGAN / FRONTEND DEVELOPER</p>
+        <h1>Small details.<br><span>Better websites.</span></h1>
+        <p class="intro">I turn ideas into thoughtful digital experiences.<br class="desktop-break"> Clean code, intuitive interfaces, and a little personality.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore my work</a><a class="text-link" href="#about">A little about me</a></div>
+      </div>
+      <div class="code-card" aria-label="A short introduction written as JavaScript">
+        <div class="code-top"><span>about-me.js</span><span>JS</span></div>
+        <pre><code><span class="muted">// Making the web a little better.</span>
+<span class="purple">const</span> developer = {
+  name: <span class="green">'Alex Morgan'</span>,
+  focus: <span class="green">'Frontend development'</span>,
+  toolkit: [
+    <span class="green">'HTML'</span>, <span class="green">'CSS'</span>, <span class="green">'JavaScript'</span>
+  ],
+  mindset: <span class="green">'Always learning'</span>
+};</code></pre>
+        <div class="code-bottom"><span>Built with curiosity.</span><span aria-hidden="true">{ }</span></div>
+      </div>
+      <div class="hero-foot"><span>DESIGN WITH INTENTION. BUILD WITH CARE.</span><span>SCROLL TO EXPLORE</span></div>
+    </section>
+
+    <section id="work" class="section wrap">
+      <div class="section-head"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Ideas brought to life<span>.</span></h2></div><p>Three sample projects.<br>A few different ways to solve a problem.</p></div>
+      <div class="projects">
+        <article class="project">
+          <div class="project-visual focus-preview" aria-hidden="true"><div class="mock-window"><div class="mock-label">FOCUS / TODAY</div><strong>Make room<br>for deep work.</strong><div class="mock-task"><span class="checkbox checked">✓</span> Plan the next big thing</div><div class="mock-task"><span class="checkbox"></span> Build something meaningful</div><div class="progress-track"><span></span></div><small>One thing at a time.</small></div><span class="visual-number">01</span></div>
+          <div class="project-meta"><span>PRODUCTIVITY</span><span>2026</span></div><h3>Focus — task planner</h3><p>A calmer place to organize your day and keep your most important work in view.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <details><summary>Explore project</summary><p>A concept for a daily planner with task completion, keyboard-friendly controls, and a progress indicator. Try the working task list in the project preview.</p></details>
+          <button class="project-button" data-project="focus" hidden>Try task planner</button>
+        </article>
+        <article class="project">
+          <div class="project-visual palette-preview" aria-hidden="true"><div class="palette-title">Good things<br>come in color.</div><div class="swatches"><span style="--swatch:#314638">01</span><span style="--swatch:#93ae84">02</span><span style="--swatch:#d7e5bf">03</span><span style="--swatch:#f4f4dc">04</span></div><span class="visual-number">02</span></div>
+          <div class="project-meta"><span>CREATIVE TOOL</span><span>2026</span></div><h3>Hue — palette studio</h3><p>A small creative tool for finding fresh color combinations for your next idea.</p><div class="tags"><span>CSS Grid</span><span>JavaScript</span><span>Color</span></div>
+          <details><summary>Explore project</summary><p>A palette generator that pairs colors and shows their hexadecimal values. Generate a combination in the preview and copy the colors for your own work.</p></details>
+          <button class="project-button" data-project="hue" hidden>Try palette studio</button>
+        </article>
+        <article class="project">
+          <div class="project-visual calculator-preview" aria-hidden="true"><div class="calc-mini"><span>SPLIT / BILL CALCULATOR</span><strong>₹600<span>.00</span></strong><small>per person</small><div class="calc-mini-row"><span>Bill amount</span><b>₹2,000</b></div><div class="calc-mini-row"><span>Tip</span><b>20%</b></div><div class="calc-mini-row"><span>People</span><b>4</b></div></div><span class="visual-number">03</span></div>
+          <div class="project-meta"><span>EVERYDAY UTILITY</span><span>2026</span></div><h3>Split — bill calculator</h3><p>Less mental math, more good company. A simple way to divide a bill fairly.</p><div class="tags"><span>Forms</span><span>JavaScript</span><span>Accessibility</span></div>
+          <details><summary>Explore project</summary><p>A bill calculator with editable totals, tip percentages, and group sizes. The preview calculates each person’s share immediately and validates your inputs.</p></details>
+          <button class="project-button" data-project="split" hidden>Try bill calculator</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section wrap"><div><p class="eyebrow">02 / THE PERSON BEHIND THE PIXELS</p><h2>Curious by nature.<br>Builder by choice<span>.</span></h2></div><div class="about-copy"><p>I’m Alex, a frontend developer who enjoys turning a blank canvas into something people can use. I care about the small things: a readable layout, a satisfying interaction, and a website that works on any screen.</p><p>I’m learning by building, one project at a time. When I’m away from the keyboard, you’ll find me sketching ideas, exploring new places, or searching for a really good cup of coffee.</p><div class="about-note"><span aria-hidden="true">✳</span><p>My approach is simple:<br><strong>Make it useful. Make it clear. Make it feel good.</strong></p></div></div></section>
+
+    <section id="skills" class="section wrap"><div class="section-head"><div><p class="eyebrow">03 / MY TOOLKIT</p><h2>The building blocks<span>.</span></h2></div><p>A strong foundation.<br>Room to keep growing.</p></div><div class="skills-grid"><div><span class="skill-number">01</span><h3>Structure</h3><p>Semantic HTML<br>Accessible content<br>Well-organized pages</p></div><div><span class="skill-number">02</span><h3>Style</h3><p>Responsive CSS<br>Flexbox & CSS Grid<br>Thoughtful typography</p></div><div><span class="skill-number">03</span><h3>Interaction</h3><p>JavaScript<br>DOM & events<br>Form validation</p></div><div><span class="skill-number">04</span><h3>Workflow</h3><p>Git & GitHub<br>Browser DevTools<br>Continuous learning</p></div></div></section>
+
+    <section id="contact" class="contact-section wrap"><p class="eyebrow">04 / SAY HELLO</p><h2>Have something<br>in mind<span>?</span></h2><div class="contact-bottom"><p>I’d love to hear about your next idea.<br>Let’s make something useful together.</p><div><p class="sample-label">SAMPLE CONTACT — REPLACE WITH YOUR EMAIL</p><a class="email" href="mailto:hello@example.com">hello@example.com</a></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="logo" href="#home">alex<span>.</span></a><p>© <span id="year">2026</span> Alex Morgan. Sample portfolio.</p><a class="text-link" href="#home">Back to top</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><p class="eyebrow">PROJECT PLAYGROUND</p><button id="close-dialog" aria-label="Close project preview">×</button></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><div id="demo-content"></div><p class="demo-note">Sample project · Changes last only while this preview is open.</p></dialog>
+</body>
+</html>
